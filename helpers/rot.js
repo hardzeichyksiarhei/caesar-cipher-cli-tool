@@ -18,3 +18,11 @@ function rotEncode(str, shift) {
 }
 
 module.exports.rotEncode = rotEncode;
+
+function rotDecode(str, shift) {
+  shift = (26 - shift) % 26;
+  result = rotEncode(str, shift);
+  return result;
+}
+
+module.exports.rotDecode = rotDecode;
