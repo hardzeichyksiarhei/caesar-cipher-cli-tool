@@ -63,7 +63,7 @@ process.on("SIGINT", () => {
 program.storeOptionsAsProperties(false).version(pckg.version);
 
 program
-  .requiredOption("-s, --shift <num>", "A shift", parseInt)
+  .requiredOption("-s, --shift <num>", "A shift", Number)
   .requiredOption("-a --action <action>", "An action encode/decode")
   .option("-i, --input <filename>", "An input file")
   .option("-o --output <filename>", "An output file")
