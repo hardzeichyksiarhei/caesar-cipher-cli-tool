@@ -42,7 +42,9 @@ const actionHandler = async () => {
     await pipeline(
       !Validator.isEmpty(input) ? fs.createReadStream(input) : process.stdin,
       new EncryptTransform(shift, action),
-      !Validator.isEmpty(output) ? fs.createWriteStream(output) : process.stdout
+      !Validator.isEmpty(output)
+        ? fs.createWriteStream(output, { flags: "a" })
+        : process.stdout
     );
 
     log(`${successMessage} text ${action}d`);
