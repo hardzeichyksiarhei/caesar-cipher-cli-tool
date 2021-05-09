@@ -1,0 +1,28 @@
+{
+  "name": "caesar-cipher-cli-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "bin": {
+    "rot": "./rot.js"
+  },
+  "scripts": {
+    "encode": "node rot -s 7 -i 1.txt -o 2.txt -a encode",
+    "decode": "node rot -s 7 -i 2.txt -o 3.txt -a decode",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardzeichyksiarhei/caesar-cipher-cli-tool.git"
+  },
+  "author": "hardz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardzeichyksiarhei/caesar-cipher-cli-tool/issues"
+  },
+  "homepage": "https://github.com/hardzeichyksiarhei/caesar-cipher-cli-tool#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0"
+  }
+}
