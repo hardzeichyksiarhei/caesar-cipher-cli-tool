@@ -7,7 +7,7 @@ $ git clone https://github.com/hardzeichyksiarhei/nodejs-course.git
 ```
 
 ```
-$ cd nodejs-course/task1
+$ cd caesar-cipher-cli-tool
 ```
 
 ```
