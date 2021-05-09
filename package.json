@@ -2,7 +2,10 @@
   "name": "caesar-cipher-cli-tool",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
+  "bin": {
+    "rot": "./rot.js"
+  },
   "scripts": {
     "encode": "node rot -s 13 -i 1.txt -o 2.txt -a encode",
     "decode": "node rot -s 13 -i 2.txt -o 3.txt -a decode",
