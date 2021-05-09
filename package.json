@@ -7,8 +7,8 @@
     "rot": "./rot.js"
   },
   "scripts": {
-    "encode": "node rot -s 13 -i 1.txt -o 2.txt -a encode",
-    "decode": "node rot -s 13 -i 2.txt -o 3.txt -a decode",
+    "encode": "node rot -s 7 -i 1.txt -o 2.txt -a encode",
+    "decode": "node rot -s 7 -i 2.txt -o 3.txt -a decode",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
